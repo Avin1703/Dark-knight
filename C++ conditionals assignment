@@ -1,0 +1,150 @@
+//Q1 - Write a program which takes the values of length and breadth from user and check if it is
+a square or not.//
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int l,b;
+    cout<<"Enter the length: ";
+    cin>>l;
+    cout<<"Enter the breadth: ";
+    cin>>b;
+    if(l==b)
+    cout<<"It is a square"<<endl;
+    else
+    cout<<"It is not a square"<<endl;
+
+    return 0;
+}
+
+//Q2 - Write a program to print absolute value of a number entered by the user.//
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int num;
+    cout<<"Enter a number: ";
+    cin>>num;
+    cout<<abs(num)<<endl;
+    
+    return 0;
+}
+
+//Q3- Write a program to take input from user for Cost Price (C.P.) and Selling Price(S.P.) and
+calculate Profit or Loss.//
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int cp, sp, profit, loss;
+    cout<<"Enter the cost price of the product: ";
+    cin>>cp;
+    cout<<"Enter the selling price of the product: ";
+    cin>>sp;
+    if(sp>cp){
+        profit = sp-cp;
+        cout<<"There is profit of Rs."<<profit<<" after selling the product."<<endl;
+    }
+    else{
+        loss=cp-sp;
+        cout<<"There is a loss of Rs."<<loss<<" after selling the product."<<endl;
+    }
+    
+    
+    
+    return 0;
+}
+
+//Q4- Write a program to print positive number entered by the user, if user enters a negative
+number, it is skipped.//
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int num;
+    cout<<"Enter a number: ";
+    cin>>num;
+    if(num>0){
+        cout<<"The number is positive"<<endl;
+    }
+    else{
+        cout<<"The number entered is negative, so it will be skipped"<<endl;
+    }
+   
+    
+    return 0;
+}
+
+//Q5- Create a calculator using switch statement to perform addition, subtraction, multiplication
+and division.//
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int num1,num2;
+    char operations;
+    cout<<"Enter the first number: ";
+    cin>>num1;
+    cout<<"Enter the second number: ";
+    cin>>num2;
+    cout<<"Enter any operator(+,-,*/): ";
+    cin>>operations;
+    switch(operations){
+        case '+':
+            cout<<"The result is: "<<num1+num2<<endl;
+            break;
+        case '-':
+            cout<<"The result is: "<<num1-num2<<endl;
+            break;
+        case '*':
+            cout<<"The result is: "<<num1*num2<<endl;
+            break;
+        case '/':
+            cout<<"The result is: "<<num1/num2<<endl;
+            break;
+        default:
+            cout<<"Invalid operator"<<endl;
+    }
+    
+    return 0;
+}
+
+//Q6. Write a program to calculate marks to grades . Follow the conversion rule as given below ://
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int marks;
+    cout<<"Enter the marks: ";
+    cin>>marks;
+    if(marks>=90 && marks<=100)
+    cout<<"Your grade is A+"<<endl;
+    else if(marks>=80 && marks<=89)
+    cout<<"Your grade is A"<<endl;
+    else if(marks>=70 && marks<=79)
+    cout<<"Your grade is B+"<<endl;
+    else if(marks>=60 && marks<=69)
+    cout<<"Your grade is B"<<endl;
+    else if(marks>=50 && marks<=59)
+    cout<<"Your grade is C+"<<endl;
+    else if(marks>=40 && marks<=49)
+    cout<<"Your grade is D"<<endl;
+    else if(marks>=30 && marks<=39)
+    cout<<"Your grade is E"<<endl;
+    else if(marks>=0 && marks<=29)
+    cout<<"Your grade is F"<<endl;
+    
+    return 0;
+}
